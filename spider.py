@@ -42,7 +42,7 @@ class Spider:
 
     @staticmethod
     def gather_link(page_url):
-        html_sting=''
+        html_string=''
         try:
             respond=urlopen(page_url)
             if response.getheader('Content-Type')=='text/html':
