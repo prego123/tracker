@@ -44,7 +44,7 @@ class Spider:
     def gather_link(page_url):
         html_string=''
         try:
-            respond=urlopen(page_url)
+            response=urlopen(page_url)
             if response.getheader('Content-Type')=='text/html':
                 html_bytes=response.read()
                 html_string=html_bytes.decode('utf-8')
